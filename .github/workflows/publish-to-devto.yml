@@ -15,6 +15,7 @@ jobs:
     - uses: actions/checkout@v4
     - name: Publish articles on dev.to
       uses: sinedied/publish-devto@v2
+      id: publish_devto
       with:
         devto_key: ${{ secrets.DEVTO_TOKEN }}
         github_token: ${{ secrets.GITHUB_TOKEN }}
