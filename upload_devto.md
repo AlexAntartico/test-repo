@@ -1,14 +1,15 @@
 ---
 title: "How to upload Markdown files to Dev.to"
 description: "A short article on how to upload md docs from GitHub to Dev.to"
-date: '2025-01-13'
+date: 2025-01-13
 tags:
   - github
   - github actions
   - dev.to
   - automation
-publised: true
+published: true
 ---
+
 # How to upload Markdown files to Dev.to
 
 This is a test post to show how to upload Markdown files to Dev.to.
@@ -37,40 +38,32 @@ To save the key as a secret. go to your repository settings, click on secrets, a
 
 ![Add Secret](./Screenshot-2025-01-13-2.png)
 
-in your repository, create a new file called `.github/workflows/devto.yml` and add the following code that you can [find also at the action landing page in the GitHub marketplace.](https://github.com/marketplace/actions/publish-to-dev-to)
+In your repository, create a new file called `.github/workflows/devto.yml` and add the following code that you can [find also at the action landing page in the GitHub marketplace.](https://github.com/marketplace/actions/publish-to-dev-to)
 
-```
+```yaml
 steps:
 - uses: actions/checkout@v4
 - name: Publish articles on dev.to
   uses: sinedied/publish-devto@v2
   with:
-    # Your dev.to personal API key to publish and update articles.
-    # See https://docs.dev.to/api/#section/Authentication/api_key
     devto_key: ${{ secrets.DEVTO_TOKEN }}
-    # Your GitHub personal access token, used to create commits for updated files.
-    # If you have a protected branch, you need to use a personal access token
-    # with the 'repo' permission.
-    # See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
     github_token: ${{ secrets.GITHUB_TOKEN }}
-    # (Optional) The files to publish. Default is "posts/**/*.md"
     files: 'posts/**/*.md'
-    # (Optional) The git branch to use. Default is 'main'.
     branch: main
-    # (Optional) Use conventional commit messages. Default is false.
-    # See https://www.conventionalcommits.org.
     conventional_commits: true
-    # (Optional) Do not make actual changes on dev.to.
     dry_run: false
 ```
 
 So far, you have:
-- Fetched your DEV.TO API key
-- Saved it as a secret in your GitHub repository
-- Created a new file in your repository `.github/workflows/devto.yml`
-- Added the code above to the repository
+
+* Fetched your DEV.TO API key
+* Saved it as a secret in your GitHub repository
+* Created a new file in your repository .github/workflows/devto.yml
+* Added the code above to the repository
 
 To finalize, commit and push the changes to your repository, the action will run automatically and if everything is set up correctly; you will see your markdown file uploaded to DEV.TO.
 
 Cheers and happy coding!
+
 Eduardo M
+
