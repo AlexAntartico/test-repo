@@ -7,7 +7,7 @@ tags:
   - github actions
   - dev.to
   - automation
-publised: true
+publised: false
 ---
 # How to upload Markdown files to Dev.to
 
