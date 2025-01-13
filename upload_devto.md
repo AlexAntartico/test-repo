@@ -1,7 +1,6 @@
 ---
-title: "How to upload Markdown files to Dev.to"
+title: "How to upload Markdown files to Dev.to from GitHub ٩(◕‿◕)۶"
 description: "A short article on how to upload md docs from GitHub to Dev.to"
-date: 2025-01-13
 tags:
   - github
   - github actions
@@ -10,7 +9,7 @@ tags:
 published: false
 ---
 
-# How to upload Markdown files to Dev.to
+# How to upload Markdown files to Dev.to from GitHub ٩(◕‿◕)۶
 
 This is a test post to show how to upload Markdown files to Dev.to.
 
