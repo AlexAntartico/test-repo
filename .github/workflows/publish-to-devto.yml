@@ -25,7 +25,7 @@ jobs:
         # See https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
         github_token: ${{ secrets.GH_PUBLISH_TOKEN }}
         # (Optional) The files to publish. Default is "posts/**/*.md"
-        files: './upload_devto.md'
+        files: 'upload_devto.md'
         # (Optional) The git branch to use. Default is 'main'.
         branch: main
         # (Optional) Use conventional commit messages. Default is false.
