@@ -1,6 +1,6 @@
 ---
-title: How to upload Markdown files to Dev.to from GitHub
-description: A short article on how to upload md docs from GitHub to Dev.to
+title: How to upload Markdown files to Devto from GitHub
+description: A short article on how to upload md docs from GitHub to Devto
 tags: ['github', 'github actions', 'dev.to', 'automation']
 published: true
 ---
