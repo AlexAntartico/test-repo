@@ -1,18 +1,16 @@
-name: Publish to Dev.to
-
-on: 
+name: publish
+on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v2
     - name: Publish articles on dev.to
       uses: sinedied/publish-devto@v2
       id: publish_devto
