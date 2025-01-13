@@ -1,13 +1,13 @@
 ---
 title: "How to upload Markdown files to Dev.to"
 description: "A short article on how to upload md docs from GitHub to Dev.to"
-date: 2025-01-13
+date: '2025-01-13'
 tags:
   - github
   - github actions
   - dev.to
   - automation
-publised: false
+publised: true
 ---
 # How to upload Markdown files to Dev.to
 
@@ -39,7 +39,7 @@ To save the key as a secret. go to your repository settings, click on secrets, a
 
 in your repository, create a new file called `.github/workflows/devto.yml` and add the following code that you can [find also at the action landing page in the GitHub marketplace.](https://github.com/marketplace/actions/publish-to-dev-to)
 
-```yaml
+```
 steps:
 - uses: actions/checkout@v4
 - name: Publish articles on dev.to
