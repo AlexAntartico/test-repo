@@ -1,10 +1,8 @@
 ---
 title: How to upload Markdown files to Dev.to from GitHub
 description: A short article on how to upload md docs from GitHub to Dev.to
-tags: 'github, github actions, dev.to, automation' 
+tags: ['github', 'github actions', 'dev.to', 'automation']
 published: true
-cover_image: null
-canonical_url: null
 ---
 
 # How to upload Markdown files to Dev.to from GitHub
