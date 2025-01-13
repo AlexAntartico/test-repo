@@ -60,5 +60,5 @@ To finalize, commit and push the changes to your repository, the action will run
 
 Cheers and happy coding!
 
-Eduardo M
+Eduardo Mendoza
 
