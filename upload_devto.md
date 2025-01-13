@@ -62,4 +62,4 @@ So far, you have:
 To finalize, commit and push the changes to your repository, the action will run automatically and if everything is set up correctly; you will see your markdown file uploaded to DEV.TO.
 
 Cheers and happy coding!
-Eduardo
+Eduardo M
