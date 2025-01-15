@@ -6,8 +6,4 @@ tags:
   - github-action
   - devto
   - automation
-
 ---
-
-# How to upload Markdown files to Dev.to from GitHub
-
